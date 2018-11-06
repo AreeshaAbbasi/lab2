@@ -5,3 +5,15 @@
     Pattern p=Pattern.compile(keywords);
     Matcher m = p.matcher(text);
      System.out.print("Operators are:");
+    public static void main(String[] args) {
+        
+      Scanner input=new Scanner(System.in);
+      String text=input.nextLine();
+      String withoutKeywords=Keywords(text);
+      String withoutOperators=checkOperator(withoutKeywords);
+      String identifiers=checkIdentifiers(withoutOperators);
+      countRemaining(identifiers);
+      
+        System.out.println(total);
+        
+        
