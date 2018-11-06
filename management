@@ -1,0 +1,7 @@
+    public static String checkOperator(String text)
+    {
+         int count=0;
+    String keywords="\\W";
+    Pattern p=Pattern.compile(keywords);
+    Matcher m = p.matcher(text);
+     System.out.print("Operators are:");
