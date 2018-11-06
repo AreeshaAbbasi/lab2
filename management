@@ -5,3 +5,15 @@
     Pattern p=Pattern.compile(keywords);
     Matcher m = p.matcher(text);
      System.out.print("Operators are:");
+         public static String checkIdentifiers(String text)
+    {
+         int count=0;
+    String keywords="[A-Za-z]\\w*";
+    Pattern p=Pattern.compile(keywords);
+    Matcher m = p.matcher(text);
+    System.out.print("Identifiers are:");
+       while(m.find()){
+            count++;
+            System.out.print(m.group(0)+",");
+            
+
